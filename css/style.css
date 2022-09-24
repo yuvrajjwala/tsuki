@@ -2585,10 +2585,10 @@ ul {
   position: absolute;
   height: 100%;
   /* z-index: -1; */
-  opacity: 0.5;
+  opacity: 0.8;
   width: 100%;
   background-image: url('../img/bg-anime.jpg');
-
+  background-size: cover;
 }
 
 .banner_part .banner_text {
@@ -6521,4 +6521,52 @@ h1, h2, h3, h4, h5, h6 {
 
   display: block;
   margin: 2rem;
+}
+
+#tsuki{
+  font-size: 5rem;
+}
+
+#tsuki-1{
+  font-size: 35px; color: white;
+}
+#tsuki-2{
+  font-size: 4rem; margin-bottom: 25px;
+}
+#tsuki-img{
+  position: absolute; left:10px; height:150px;
+}
+
+@media only screen and (max-width:1000px) {
+  #tsuki{
+    font-size: 3.5rem;
+  }
+  #tsuki-1{
+    font-size: 25px; color: white;
+  }
+  #_01{
+    margin: auto;
+      color: white;
+      font-size: 1rem;
+      word-spacing: 4px;
+      text-align: justify;
+      line-height: 1.75rem;
+  }
+  #tsuki-2{
+    font-size: 3.5rem; margin-bottom: 25px;
+  }
+  #tsuki-img{
+    position: absolute; left:10px; height:100px;width: 100px;
+  }
+  .banner_part::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    /* z-index: -1; */
+    opacity: 0.8;
+    width: 100%;
+    background-image: url('../img/bg-anime.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 }

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -34,11 +35,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand py-4" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                            <a class="navbar-brand py-4" href="index.html"> <img id="tsuki-img" src="img/tsuki-logo.png" alt="logo"> </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                                <!-- <span class="menu_icon"><i class="fas fa-bars"></i></span> -->
                             </button>
 
                             <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
@@ -93,9 +94,9 @@
                     <div class="col-lg-6 col-md-8">
                         <div class="banner_text">
                             <div class="banner_text_iner">
-                                <h1>Tsukimichi</h1>
-                                <p>The Lover Boy</p>
-                                <a href="#" class="btn_1">See More</a>
+                                <h1 id="tsuki" data-aos="fade-up" data-aos-duration="500">Tsukimichi</h1>
+                                <div id="tsuki-1" data-aos="fade-up" data-aos-duration="1000">The Lover Boy</div>
+                                <a href="#main-area" class="btn_1" data-aos="fade-up" data-aos-duration="1500">See More</a>
                             </div>
                         </div>
                     </div>
@@ -105,7 +106,7 @@
         <!-- banner part start-->
 
         <!--::client logo part end::-->
-        <section class="client_logo">
+        <!-- <section class="client_logo">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-12">
@@ -135,11 +136,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--::client logo part end::-->
 
-        <section>
-            <div class="col-lg-8 py-4" id="_01">
+        <section style="padding-top: 5rem;" id="main-area">
+            <div class="col-lg-8 py-4" id="_01" data-aos="fade-up" data-aos-duration="500">
                 In the days when dragons live with men. In the village of Zaka, in the family of Daraka, there was a
                 beautiful girl who had a voice that everyone loved to hear.
                 <br><p class="space"></p>
@@ -186,14 +187,14 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-5 col-lg-6 col-xl-6">
                         <div class="learning_img">
-                            <img src="img/about_img.png" alt="">
+                            <img data-aos="fade-up" data-aos-duration="500" src="img/about_img.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-6 col-xl-5">
                         <div class="about_us_text">
-                            <h2>Tokenomics
+                            <h2 id="tsuki-2" data-aos="fade-up" data-aos-duration="500">Tokenomics
                             </h2>
-                            <p>Total supply of 1B
+                            <p style=" line-height: 52px;" data-aos="fade-up" data-aos-duration="500">Total supply of 1B
                                 <br />
                                 Tax: 4% tax on every buy and sell.
                             </p>
@@ -506,7 +507,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="section_tittle text-center">
-                            <h2>Upcoming Fighter</h2>
+                            <!-- <h2>Upcoming Fighter</h2> -->
                         </div>
                     </div>
                 </div>
@@ -514,10 +515,10 @@
                     <div class="row justify-content-center align-items-center h-100">
                         <div class="col-10 col-sm-5 col-lg-3">
                             <div class="upcomming_war_counter text-center">
-                                <h2>Dark Dragon</h2>
+                                <!-- <h2>Dark Dragon</h2> -->
                                 <div id="timer" class="d-flex justify-content-between">
-                                    <div id="days"></div>
-                                    <div id="hours"></div>
+                                    <!-- <div id="days"></div>
+                                    <div id="hours"></div> -->
                                 </div>
                             </div>
                         </div>
@@ -645,19 +646,18 @@
             <div class="copygight_text">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-8">
+                        <div style="text-align: center;" class="col-lg-12">
                             <div class="copyright_text">
                                 <P>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     Copyright &copy;
                                     <script>document.write(new Date().getFullYear());</script> All rights reserved |
-                                    This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a
-                                        href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    Tsuki
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </P>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <!-- <div class="col-lg-4">
                             <div class="footer_icon social_icon">
                                 <ul class="list-unstyled">
                                     <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a>
@@ -667,7 +667,7 @@
                                     <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -700,6 +700,14 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 400,
+        });
+    </script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
 </body>
