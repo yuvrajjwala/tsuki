@@ -6518,7 +6518,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .space{
   height: 1px;
-  width: 100vw;
+
   display: block;
   margin: 2rem;
 }
