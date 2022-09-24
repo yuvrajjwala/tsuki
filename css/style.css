@@ -1,6 +1,11 @@
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Aclonica|Poppins:300,400,500,600&display=swap");
 /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_extends.scss */
+*{
+  scroll-behavior: smooth;
+}
+
+
 .btn_1, .live_stareams .live_stareams_slide .live_stareams_slide_img:after, .Latest_War .Latest_War_text:after, .gallery_part .single_gallery_item .single_gallery_item_iner:after, .footer_part .single_footer_part .mail_part .email_icon {
   background-image: -webkit-gradient(linear, right top, left top, from(#ff0000), color-stop(51%, #c6019a), to(#ff0000));
   background-image: -webkit-linear-gradient(right, #ff0000 0%, #c6019a 51%, #ff0000 100%);
@@ -2567,10 +2572,23 @@ ul {
 
 .banner_part {
   position: relative;
-  background-image: url(../img/bg-anime.jpg);
+  /* background-image: url(../img/bg-anime.jpg); */
+  background: linear-gradient(to bottom, transparent,#0B0F18,#0B0F18);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+  background-blend-mode: overlay;
+}
+
+.banner_part::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  /* z-index: -1; */
+  opacity: 0.5;
+  width: 100%;
+  background-image: url('../img/bg-anime.jpg');
+
 }
 
 .banner_part .banner_text {
@@ -6488,3 +6506,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#_01{
+  margin: auto;
+    color: white;
+    font-size: 1.5rem;
+    word-spacing: 20px;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.space{
+  height: 1px;
+  width: 100vw;
+  display: block;
+  margin: 2rem;
+}
